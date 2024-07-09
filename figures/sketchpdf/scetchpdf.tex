@@ -1,0 +1,22 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+
+\usepackage{../settings}
+
+\begin{document}
+	\begin{tikzpicture}
+		\tikzstyle{every node}=[font=\footnotesize]
+		
+		\draw[fill=geocolor1](-2.25,0.25) -- (-2.25,0) arc (180:360:2.25cm and 0.75cm) -- (2.25,0) -- (2.25,0.25);
+		\draw[fill=geocolor1] (0,0.25) circle (2.25cm and 0.75cm);
+		
+		\draw[fill=geocolor2](-1.5,0.5) -- (-1.5,0.25) arc (180:360:1.5cm and 0.5cm) -- (1.5,0.25) -- (1.5,0.5);
+		\draw[fill=geocolor2] (0,0.5) circle (1.5cm and 0.5cm);
+		
+		\draw[fill=geocolor1](-1.2,0.75) -- (-1.2,0.5) arc (180:360:1.2cm and 0.4cm) -- (1.2,0.5) -- (1.2,0.75);
+		\draw[fill=geocolor1] (0,0.75) circle (1.2cm and 0.4cm);
+		
+		\draw[thick] (1.5,0.5) -- (2.5,0.5) node[anchor=west]{Sample};
+		\draw[thick] (-1,0.75) -- (-2.75,0.5) node [anchor=east, align=left]{External \\Electrodes} -- (-2.25,0.25); 
+	\end{tikzpicture}
+\end{document}

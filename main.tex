@@ -1,0 +1,116 @@
+% Tikz Trek: Navigating the Basics of LaTex Graphics
+
+% This is a Demo file for an introduction to Tikz. 
+% We can only introduce some of the basics of creating graphics and plots in Tikz.
+% More details on the basics can be found here: 
+% https://de.overleaf.com/learn/latex/TikZ_package
+% https://de.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ%3A_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing
+
+% The graphics in this talk follow the experiment of Nils Arbeiter (https://eln.elaine.uni-rostock.de/experiments.php?mode=view&id=5087).
+
+
+\documentclass[journal]{IEEEtran}
+
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes.geometric}
+\usepgfplotslibrary{groupplots}
+\usepackage{lipsum}
+\usepackage{siunitx}
+
+\usepackage{figures/settings}
+
+\begin{document}
+
+\title{Bare Demo of IEEEtran.cls\\ for IEEE Journals}
+
+\author{Michael~Shell,~\IEEEmembership{Member,~IEEE,}
+        John~Doe,~\IEEEmembership{Fellow,~OSA,}
+        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
+\thanks{M. Shell was with the Department
+of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
+\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
+\thanks{Manuscript received April 19, 2005; revised August 26, 2015.}}
+
+\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+
+\maketitle
+
+
+\begin{abstract}
+\lipsum[1-1]
+\end{abstract}
+
+\begin{IEEEkeywords}
+IEEE, IEEEtran, journal, \LaTeX, paper, template.
+\end{IEEEkeywords}
+
+
+
+
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Scetching}
+\IEEEPARstart{T}{his} is a  demo file.
+\lipsum[1-2]
+
+
+\begin{figure}[t]
+    \centering
+    %\input{figures/sketch/sketch}
+    \caption{This is my first scetch of a nice experiment provided by Nils.}
+    \label{fig:labelA}
+\end{figure}
+
+
+
+\lipsum[1-2]
+\subsection{Subsection Heading Here}
+Subsection text here.
+\begin{figure}[t]
+    \centering
+    %\input{figures/impedance_plots/impedance_plot}
+    \caption{Caption}
+    \label{fig:labelB}
+\end{figure}
+\lipsum[1-2]
+\begin{figure}[t]
+    \centering
+    %\input{figures/impedance_plots/bode_plot}
+    \caption{Caption}
+    \label{fig:labelC}
+\end{figure}
+\lipsum[1-2]
+\begin{figure}[t]
+    \centering
+    %\input{figures/impedance_plots/nyquist_plot}
+    \caption{Caption}
+    \label{fig:labelD}
+\end{figure}
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+\subsubsection{Subsubsection Heading Here}
+Subsubsection text here.
+
+\section{Conclusion}
+The conclusion goes here.
+
+
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\end{thebibliography}
+
+\end{document}
+
+
